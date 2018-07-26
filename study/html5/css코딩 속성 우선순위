@@ -1,0 +1,43 @@
+﻿css 코딩 속성 우선순위
+
+레이아웃
+display, overflow, float, position 
+(position: left, right, top, bottom)
+
+
+박스모델
+width, height, margin, padding
+
+}
+
+글자관련
+color(글자색)
+font-style(기울임)
+font-weight(굵기)
+font-size(크기)
+line-height(줄간격)
+font-family(글자체)
+text-indent(들여쓰기)
+text-decoration(밑줄)
+letter-spacing(글자간격)
+word-spacing(단어간격)
+text-aline(정렬)
+
+
+배경관련 
+background-color(배격색)
+background-image(배격이미지)
+background-position(배경이미지의 위치)
+background-size(배경크기)
+background-repeat(배경이미지 반복여부)
+
+
+테두리관련
+border
+boder-width
+border-style
+border-color<---border와같은 것
+box-sizing:border-box:
+border-redius
+
+기타 (순서없음)

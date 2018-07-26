@@ -1,0 +1,74 @@
+display overflow float,position
+
+
+color
+font-style
+font-weight
+font-size
+line-height
+font-family
+
+
+text-indent
+text-decoration
+latter-spacing
+word-spacing
+text-aline
+
+
+
+*{margin:0; padding:0;}/*약식초기화*/
+
+
+css reset(태그의 초기화) 이 필요한 이유
+
+css 코딩에 들어가면서 페이지에 속하는 모든 
+요소들의 여백을 초기화 시키는 작업- <code>{margin:0;padding:0}</code>
+
+
+
+
+
+
+css 코딩 속성
+
+
+
+레이아웃
+
+display overflow float position
+
+
+
+
+
+박스
+
+width height margin pading
+
+
+
+
+
+
+
+글자관련
+
+color
+font-style
+font-weight
+font-family
+text-indent
+
+
+
+배경관련
+
+
+
+
+테두리관련
+
+
+
+

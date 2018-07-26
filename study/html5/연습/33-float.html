@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 박스 나열</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+		
+		.test{*zoom:1;}/*구형 ie 브라우저에서 아래의 :fter 가상 선택자 구문을 인식하게 하는 코드로서 css 핵이라고 불리운다.*/
+		
+		
+		
+		hr{position:static;left:0;margin:50px 0;}
+		
+		.study>li{float:left;width:200px; height:100px;border:1px solid black; box-sizing:border-box; line-height:100px;text-align:center;}
+		
+		.study>li:nth-child(1){background-color:blue;}
+		.study>li:nth-child(2){background-color:red;}
+		.study>li:nth-child(3){background-color:green;}
+		.study>li:nth-child(4){background-color:yellow;}
+		.clearfix{clear:both;}
+		
+		.subject:after{display:block;
+			clear:both;background-color:pink;
+			content:""}
+		
+		.subject>li{float:left;width:200px; height:100px; border:1px solid red;line-height:100px;text-align:center;}
+		.subject>li:nth-child(1){background-color:red;}
+		.subject>li:nth-child(2){background-color:green;}
+		.subject>li:nth-child(3){background-color:yellow;}
+		.subject>li:nth-child(4){background-color:blue;}
+		
+		.clearfix{clear:both;}
+		
+		p{float:left; width:100px;height:100;}
+		span:nth-child(1){display:block;line-height:100px; text-align:center;background-color:red;}
+		span:nth-child(2){display:block;line-height:100px; text-align:center;background-color:green;}
+		span:nth-child(3){display:block;line-height:100px; text-align:center;background-color:pink;}
+		span:nth-child(4){display:block;line-height:100px; text-align:center;background-color:blue;}
+		span:nth-child(5){display:block;line-height:100px; text-align:center;background-color:red;}
+		.clearfix{clear:both;}
+		
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <h1 class="text-center">float을 이용한 박스 나열</h1>
+    <ul class="study">
+    	<li>html5</li>
+    	<li>css</li>
+    	<li>javascript</li>
+    	<li>jwuery</li>
+    	
+    </ul>
+    <!-- 1.float의 끌어당기는 영향력을 차단시키는 마감재 역할 -->
+    <!--2. float의 영향을 차단시키는 마감재 사용은 필수(반드-->
+    <div class="clearfix"></div>
+    
+    <p>안녕</p>
+    
+    <hr>
+    
+    	<ol class="subject">
+    		<li>uiux</li>
+    		<li>포토샵</li>
+    		<li>일러스트</li>
+    		<li>포트폴리오</li>
+    		
+    	</ol>
+    	
+    	<div class="clearfix"></div>
+    	<P style="clear:both;">추천과목 </P>
+    	<P>인기과목 </P>
+    	
+    	<hr>
+    	
+    	<p class="test">
+    		<span class="red">red</span>
+    		<span class="blue">blue</span>
+    		<span class="yellow">yellow</span>
+    		<span class="green">green</span>
+    		<span class="pink">pink</span>
+    		
+    		
+    	</p>
+    	
+    	<p>플롯 테스트</p>
+    	
+    </div>
+</body>
+</html>
