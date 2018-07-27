@@ -1,0 +1,9 @@
+https://git-scm.com/
+
+
+
+
+그림자효과
+
+text-shadow:15px 15px 15px red 
+box-shadow:10px 10px 10px black 

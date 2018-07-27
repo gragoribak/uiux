@@ -38,19 +38,9 @@ css 코딩 속성
 
 display overflow float position
 
-
-
-
-
 박스
 
 width height margin pading
-
-
-
-
-
-
 
 글자관련
 
@@ -64,11 +54,19 @@ text-indent
 
 배경관련
 
-
+backgrond-color
+background-image
+badkground-position
+background-size
+background-repeat
 
 
 테두리관련
 
-
+border
+border-width
+border-color
+box-sizing:border-box;
+border-radius
 
 

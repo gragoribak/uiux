@@ -1,18 +1,42 @@
 @charset "utf-8"; 
 
-#wrap{width:600px;background-color:#333;margin:0 auto;margin-top:50px;}
+#wrap{width:600px; margin:0 auto;background-color:#333;}
+header{position:relative;height:100px;background-color:#069;}
+header>h1{left:30px;top:40px;position:absolute;font-size:30px;color:#fff;}
 
-header{height:100px;background-color:#006699; line-height: 100px;margin:0 auto;}
+header>nav>.gnb{position:absolute;width:260px;*zoom:1;}
+header>nav>.gnb:after{display:block;clear:both;content:"";}
 
-header>h1{float:left;margin-left:10px;color:white;font-weight:800;}
-header>.ngt{margin-right:20px;}
-header>.ngt>li{float:left;color:white;margin-left:30px;}
-span{color:yellow;}
-section{width:570px;height:auto;background-color:white;margin-top:5px;margin:0 auto;}
-.clearfix{clear:both;}
-section>article>h2{margin-top:30px 0 0 10px;font-size:25px;}
-section>h2>p{margin-top:20px;}
 
-section>.cont>img{float:right;width:300px;font-size:14px;}
 
-footer{height:80px;margin:0 auto;line-height:80px;text-align:center;font-size:16px;color:white;}
+header>nav{position:absolute;left:240px;top:45px;}
+header>nav>.gnb>li{width:65px;float:left;/*outline:1px solid red;*/}
+header>nav>.gnb>li>a{height:20px;line-height:20px;display:block;color:#fff;text-align:center;}
+
+
+section{width:570px;margin:0 auto;padding:30px 10px 10px 10px;background-color:#fff;}
+section>p{line-height:1.5;font-size:14px;*zoom:1;}
+section>p:after{display:block;clear:both;content="";}
+section .frame{float:right;display:block;width:300px;overflow:hidden;margin:5px 0 5px 5px;border-radius:5px;box-shadow:3px 3px 3px #aaa;}
+section .frame>img{display:block;width:100%;}
+/*이미지 밑에 약간 뜬는 현상 해결방법
+display:block,방법1 vertical-align:top방법2*/
+section>h2{margin-bottom:25px;color:black;font-size:25px;}
+
+
+
+/*:nth-child는 친형제 관계에서만 성립된다.*/
+header>nav>.gnb>li:nth-child(3)>a,
+header>nav>.gnb>li:hover>a{font-weight:800;color:#ff0;text-shadow:1px 1px 1px;}
+
+
+
+
+
+
+
+
+
+
+
+footer>address{height:80px;line-height:80px;text-align:center;color:#fff;font-size:16px;font-weight:800;}
