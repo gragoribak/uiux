@@ -25,6 +25,10 @@ section>h2{margin-bottom:25px;color:black;font-size:25px;}
 
 
 
+
+-
+
+
 /*:nth-child는 친형제 관계에서만 성립된다.*/
 header>nav>.gnb>li:nth-child(3)>a,
 header>nav>.gnb>li:hover>a{font-weight:800;color:#ff0;text-shadow:1px 1px 1px;}

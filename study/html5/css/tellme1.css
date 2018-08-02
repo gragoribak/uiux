@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+section{padding:20px 0 80px;background-color: #2f2f2f;}/*bgc + tab = background-color:;*/
+section>h2{color:#fff;font-weight:500;font-size:22px;}
+section>.iam{overflow-y: scroll;width:845px;height: 420px;margin:0 auto;background-color:#fff;}
+section>.iam{*zoom=1;}
+section>.iam:after{display:block;clear:both;content:'';}/*d:b cl:b ct*/
+
+
+section>.iam>dl{position:relative;
+    float:left;/*fl:l*/
+    width:255px;height:380px;
+    margin-top:20px;/*mt*/
+    margin-left:20px;/*ml*/
+    border:1px solid #dedede;
+    box-sizing: border-box;/*지워도 상관없음*/
+    box-sizing: border-box;/*지워도 상관없음*/
+    box-sizing: border-box;/*bxz:bb*/
+}
+
+section>.iam>dl:nth-child(4),section>.iam>dl:nth-child(5),section>.iam>dl:nth-child(6){margin-bottom:20px;}/*mb*/
+
+section>.iam>dl>dt:before{display: block;width: 122px;height:122px ;border:1px solid blue;content:"";/*가상선택자 before,ajfter의 필수 속성*/margin:20px auto;border-radius: 200px;/*bdrs*/}
+
+section>.iam>dl:nth-child(1)>dt:before{background-image:url(../images/tellme-1.jpg);background-position: -18px 0;
+background-size:120% ;
+}
+
+section>.iam>dl:nth-child(2)>dt:before{background-image:url(../images/tellme-2.jpg);background-position: -10px -70px;
+background-size:120% ;
+}
+
+
+section>.iam>dl:nth-child(3)>dt:before{background-image:url(../images/tellme-3.jpg);background-position: -18px -0px;
+background-size:120%;
+}
+
+
+section>.iam>dl:nth-child(4)>dt:before{background-image:url(../images/tellme-4.jpg);background-position: -18px -70px;
+background-size:120%;
+}
+
+section>.iam>dl:nth-child(5)>dt:before{background-image:url(../images/tellme-5.jpg);background-position: -18px -70px;background-size:120%;
+}
+
+
+
+section>.iam>dl>dt{color:#000;font-weight:600;font-size:15;text-align: center;/*ta:c*/}
+
+section>.iam>dl>dt>dd{line-height:1.8;text-align:center;padding: 20px;}
+
+section>.iam>dl>dt>dd>span{position: absolute;/*기준점을 dl에 잡음*/left:0;bottom:10px;width: 100;display: block;color:#000;font-weight: 600;font-size: 15px;text-align: center;}
+
+
+
